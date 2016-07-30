@@ -10,3 +10,4 @@ Homestead.json
 .env
 /storage/files
 /storage/*
+npm-debug.log
