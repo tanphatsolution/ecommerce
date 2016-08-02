@@ -60,6 +60,7 @@ elixir(function(mix) {
         'assets/js/backend/backend.js',
         'assets/js/frontend/frontend.js',
         'assets/vue/backend/dropzone.js',
+        'assets/vue/frontend/category.js',
     	])
     .browserSync({
         proxy: 'ecm.dev'
