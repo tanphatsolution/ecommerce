@@ -6,14 +6,12 @@
     	<div class="breadcrumb clearfix">
             <a class="home" href="/" title="Return to Home">Home</a>
             <span class="navigation-pipe">&nbsp;</span>
-            <span class="navigation_page">{{$item->name}}</span>
+            <span class="navigation_page">{{ $item->name }}</span>
         </div>
 
         <div class="row">
             <!-- Left colunm -->
-            <div class="column col-xs-12 col-sm-3" id="left_column">
-
-            </div>
+            <div class="column col-xs-12 col-sm-3" id="left_column"></div>
 
             <div class="center_column col-xs-12 col-sm-9" id="center_column">
             	@if ($item->banner)
