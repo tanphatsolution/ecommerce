@@ -32,7 +32,7 @@
 </div>
 
 <div class="form-group">
-	@include('backend._partials.form.form-group-image', ['imageName' => 'image','value'=>$item->image_default,'height' => '150px'])
+	@include('backend._partials.form.form-group-image', ['imageName' => 'image','value'=> isset($item) ? $item->image_default : null,'height' => '150px'])
 </div>
 
 <div class="form-group">

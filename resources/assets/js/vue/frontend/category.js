@@ -22,7 +22,7 @@ new Vue({
         properties: window.properties || [],
 
     },
-    components : { FilterProduct,ContainerProduct }
+    components : { FilterProduct, ContainerProduct }
 });
 
 window.$router = router
