@@ -1,3 +1,4 @@
+process.env.DISABLE_NOTIFIER = true;
 var elixir = require('laravel-elixir');
 var vueify = require('vueify');
 //var elixirTypscript = require('elixir-typescript');
