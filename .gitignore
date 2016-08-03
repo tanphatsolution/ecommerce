@@ -8,5 +8,6 @@
 Homestead.yaml
 Homestead.json
 .env
+npm-debug.log
 /storage/files
 /storage/*
