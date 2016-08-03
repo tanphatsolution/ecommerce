@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Cache;
 use App\Repositories\Contracts\ConfigRepository;
 use App\Repositories\Contracts\MenuRepository;
+use App\Repositories\Contracts\ProductRepository;
 
 use League\Glide\ServerFactory;
 use League\Glide\Responses\LaravelResponseFactory;
@@ -203,6 +204,16 @@ class AppServiceProvider extends ServiceProvider
 
             $view->with('_menus', Cache::remember('_menus', 60, function () {
                 return app(MenuRepository::class)->getRoot();
+            }));
+        });
+
+        view()->composer('frontend.product.*', function ($view) {
+            $view->with('_newProducts', Cache::remember('_newProducts', 60, function () {
+                return app(ProductRepository::class)->take(10, ['id', 'name', 'slug', 'price', 'price_sale', 'image', 'locked', 'sale']);
+            }));
+
+            $view->with('_saleProducts', Cache::remember('_saleProducts', 60, function () {
+                return app(ProductRepository::class)->sale(3, ['id', 'name', 'slug', 'price', 'price_sale', 'image', 'locked', 'sale']);
             }));
         });
     }

@@ -18,6 +18,8 @@
     <body class="{{$page or 'home'}} option2">
         @include('frontend._partials.header')
         @yield('page-content')
+        @include('frontend._partials.footer')
+        @include('frontend._partials.social')
         {{ HTML::script('vendor/jquery/jquery.min.js') }}
         {{ HTML::script('vendor/bootstrap/js/bootstrap.min.js') }}
         {{ HTML::script(elixir('assets/js/frontend/frontend.js')) }}

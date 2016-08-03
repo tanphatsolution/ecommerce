@@ -30,5 +30,7 @@ interface AbstractRepository
 
     public function paginate($limit = null, $columns = ['*']);
 
+    public function random($limit = null, $columns = ['*']);
+
     public function datatables($columns = ['*'], $with = []);
 }

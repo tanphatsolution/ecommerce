@@ -21,4 +21,19 @@ class ProductRepositoryEloquent extends AbstractRepositoryEloquent implements Pr
     {
     	return $this->model->allTags()->paginate($paginate);
     }
+
+    public function findBySlug($slug)
+    {
+        return $this->model->findBySlug($slug);
+    }
+
+    public function random($limit = null, $columns = ['*'])
+    {
+        return $this->model->with('provider')->where('locked', false)->orderByRaw('RAND()')->take($limit)->get($columns);
+    }
+
+    public function sale($limit = null, $columns = ['*'])
+    {
+        return $this->model->where('locked', false)->where('sale', true)->orderByRaw('RAND()')->take($limit)->get($columns);
+    }
 }

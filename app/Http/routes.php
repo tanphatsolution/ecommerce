@@ -28,7 +28,7 @@ Route::group(['middlewareGroups' => ['web']], function () {
 		Route::get('/', ['as' => 'home.index', 'uses' => 'HomeController@index']);
         Route::get('category/{slug}', ['as' => 'category.slug', 'uses' => 'CategoryController@category']);
         Route::get('page/{slug}', ['as' => 'page.slug', 'uses' => 'PageController@slug']);
-        Route::get('product/{slug}', ['as' => 'product.slug', 'uses' => 'ProductController@slug']);
+        Route::get('product/{slug}', ['as' => 'product.slug', 'uses' => 'ProductController@show']);
 	});
 
 	Route::group(['prefix' => '/backend', 'namespace' => 'Backend', 'middleware' => ['auth']], function () {

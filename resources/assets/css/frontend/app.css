@@ -1774,7 +1774,7 @@ span.notify-right{
     content: ':';
 }
 
-.latest-deals .product-list .owl-controls{
+.latest-deals .product-list{
     width: 100%;
     top: 40%;
 }
@@ -1817,10 +1817,10 @@ span.notify-right{
 /*-------------------
 [6.2. Popular tabs]
 */
-.popular-tabs .owl-controls .owl-next{
+.popular-tabs .owl-next{
   top: -46px;
 }
-.popular-tabs .owl-controls .owl-prev{
+.popular-tabs .owl-prev{
   top: -46px;
   left: inherit;
   right: 26px;
@@ -2148,42 +2148,33 @@ span.notify-right{
 
 /*------------------
 [9. Owl carousel]
-*/
-.owl-controls{
+*/{
     
-}
-.owl-controls .owl-prev{
+} .owl-prev{
     position: absolute;
     left: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-.owl-controls .owl-next{
+} .owl-next{
     position: absolute;
     right: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-.owl-controls .owl-prev,
-.owl-controls .owl-next{
+} .owl-prev, .owl-next{
     background: #eaeaea;
     width: 24px;
     height: 24px;
     color: #ccc;
     text-align: center;
     padding-top: 4px;
-}
-.owl-controls .owl-prev:hover,
-.owl-controls .owl-next:hover{
+} .owl-prev:hover, .owl-next:hover{
     background: #5880A9;
     color: #fff;
-}
-.owl-controls .owl-prev .fa,
-.owl-controls .owl-next .fa{
+} .owl-prev .fa, .owl-next .fa{
     font-weight: bold;
 }
 
@@ -2407,18 +2398,18 @@ span.notify-right{
     background: #fff;
 }
 
-.brand-showcase-box .brand-showcase-logo .owl-controls .owl-prev, 
-.brand-showcase-box .brand-showcase-logo .owl-controls .owl-next {
+.brand-showcase-box .brand-showcase-logo .owl-prev, 
+.brand-showcase-box .brand-showcase-logo .owl-next {
   top: -18px;
 }
-.brand-showcase-box .brand-showcase-logo .owl-controls .owl-next{
+.brand-showcase-box .brand-showcase-logo .owl-next{
     
 }
-.brand-showcase-box .brand-showcase-logo .owl-controls .owl-prev{
+.brand-showcase-box .brand-showcase-logo .owl-prev{
     left: inherit;
     right: 26px;
 }
-.brand-showcase-box .brand-showcase-logo .owl-controls .fa {
+.brand-showcase-box .brand-showcase-logo .fa {
   font-weight: bold;
 }
 
@@ -2478,7 +2469,7 @@ span.notify-right{
 }
 .trademark-product .info-product .product-price{
     font-size: 18px;
-    color: #F36;
+    color: #627F9C;
     font-weight: bold;
 }
 .trademark-product .info-product .product-star{
@@ -2791,7 +2782,7 @@ span.notify-right{
   display: none;
 }
 .scroll_top:hover{
-  background: #F36;
+  background: #627F9C;
 }
 
 .scroll_top:before {
@@ -3050,23 +3041,20 @@ span.notify-right{
 .filter-size li{
   width: 50%;
   float: left;
-}
-.owl-controls .owl-dots{
+} .owl-dots{
   position: absolute;
   left: 0;
   bottom: 0;
   text-align: center;
   width: 100%;
-}
-.owl-controls .owl-dots .owl-dot{
+} .owl-dots .owl-dot{
   width: 14px;
   height: 14px;
   background: #adadad;
   display: inline-block;
   margin: 0 6px;
   border-radius: 90%;
-}
-.owl-controls .owl-dots .owl-dot.active{
+} .owl-dots .owl-dot.active{
   background: #5880A9;
 }
 
@@ -3160,7 +3148,7 @@ span.notify-right{
     clear: both;
     padding-left: 15px;
     padding-right: 15px;
-    background: #F36;
+    background: #627F9C;
 }
 
 .btn-add-cart:hover{
@@ -3224,8 +3212,8 @@ span.notify-right{
 [16.2 Center column]
 */
 
-.category-slider .owl-controls .owl-prev, 
-.category-slider .owl-controls .owl-next {
+.category-slider .owl-prev, 
+.category-slider .owl-next {
   background: #aaa;
   width: 40px;
   height: 40px;
@@ -3242,22 +3230,22 @@ span.notify-right{
   opacity: 0;
 
 }
-.category-slider .owl-controls .owl-prev:hover, 
-.category-slider .owl-controls .owl-next:hover{
+.category-slider .owl-prev:hover, 
+.category-slider .owl-next:hover{
   background: #5880A9;
 }
-.category-slider .owl-controls .owl-prev{
+.category-slider .owl-prev{
   left: 50%;
 }
-.category-slider .owl-controls .owl-next{
+.category-slider .owl-next{
   right: 50%;
 }
-.category-slider:hover .owl-controls .owl-next{
+.category-slider:hover .owl-next{
     right: 0;
     visibility: inherit;
     opacity: 1;
 }
-.category-slider:hover .owl-controls .owl-prev{
+.category-slider:hover .owl-prev{
     left: 0;
     visibility: inherit;
     opacity: 1;
@@ -4111,7 +4099,7 @@ span.notify-right{
     padding: 10px 25px;
 }
 #contact #btn-send-contact:hover{
-    background: #F36;
+    background: #627F9C;
 }
 #contact_form_map ul {
   line-height: 28px;
@@ -4707,10 +4695,10 @@ span.notify-right{
   content: "\f178";
   padding-left: 10px;
 }
-.blog-list .blog-list-wapper .owl-controls .owl-next{
+.blog-list .blog-list-wapper .owl-next{
   top: -50px;
 }
-.blog-list .blog-list-wapper .owl-controls .owl-prev{
+.blog-list .blog-list-wapper .owl-prev{
   left: inherit;
   right: 26px;
   top: -50px;

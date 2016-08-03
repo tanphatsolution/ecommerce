@@ -75,3 +75,23 @@
         }
     }
 }
+
+#footer {
+    #introduce-box {
+        margin-bottom:25px;
+        #address-list {
+            .tit-contain {
+                font-size:14px;
+                line-height:1.2rem;
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: #233140;
+        .bottom-wapper {
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+    }
+}

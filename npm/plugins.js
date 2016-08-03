@@ -64,6 +64,10 @@ var plugins = {
       in: 'select2/dist/css/select2.min.css',
       out: 'select2/css/select2.min.css'
     },
+    {
+      in: 'elevatezoom/jquery.elevatezoom.js',
+      out: 'elevatezoom/jquery.elevatezoom.js'
+    },
 
   ],
   vue: [

@@ -29,6 +29,7 @@
     "jqTree": "jqtree#^1.3.3",
     "summernote": "^0.8.1",
     "select2": "^4.0.3",
-    "owl.carousel": "^2.1.6"
+    "owl.carousel": "^2.1.6",
+    "elevatezoom": "^2.2.3"
   }
 }

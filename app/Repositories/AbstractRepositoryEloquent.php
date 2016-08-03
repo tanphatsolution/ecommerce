@@ -73,6 +73,11 @@ abstract class AbstractRepositoryEloquent
         return $this->model->orderBy('id','DESC')->paginate($limit, $columns);
     }
 
+    public function random($limit = null, $columns = ['*'])
+    {
+        return $this->model->orderByRaw("RAND()")->take($limit)->get($columns);
+    }
+
     public function datatables($columns = ['*'], $with = [])
     {
         return $this->model->with($with)->orderBy('id', 'desc')->get($columns);
