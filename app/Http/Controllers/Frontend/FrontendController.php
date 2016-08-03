@@ -10,8 +10,8 @@ abstract class FrontendController extends AbstractController
 
     public function category($slug)
     {
-        $this->compacts['item'] = $this->repository->findBySlug($slug);
-        $this->compacts['heading'] = $this->compacts['item']->name;
-        $this->compacts['page'] = $this->repositoryName . '-page';
+    	$this->compacts['item'] = $this->repository->findBySlug($slug);
+    	$this->compacts['heading'] = $this->compacts['item']->name;
+    	$this->compacts['page'] = $this->repositoryName . '-page';
     }
 }
