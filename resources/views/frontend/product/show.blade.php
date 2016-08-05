@@ -47,22 +47,28 @@
                                 <span>Provider</span>: <a href="#">{{ $item->provider->name }}</a>
                                 @endif
                             </div>
-                            @if ($properties)
                             <div class="form-option">
+                            @if ($properties)
                                 <p class="form-option-title">Thuộc tính</p>
                                 @foreach ($properties as $key => $property)
                                 <div class="attributes">
                                     <div class="attribute-label">{{ ucfirst($key) }}:</div>
                                     <div class="attribute-list">
-                                        {{ Form::select('property_id', $property->lists('name', 'id'), null) }}
+                                        {{ Form::select("property_id[]", $property->lists('name', 'id'), $property->first()->id, ['v-model' => "productSelected['$key']"]) }}
                                     </div>
                                 </div>
                                 @endforeach
-                            </div>
                             @endif
+                                <div class="attributes">
+                                    <div class="attribute-label">Số lượng:</div>
+                                    <div class="attribute-list product-qty">
+                                        <input class="option-product-qty" type="number" value="1" v-model="productQuantity">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-action">
                                 <div class="button-group">
-                                    <a class="btn-add-cart" href="#">Thêm vào giỏ hàng</a>
+                                    <a class="btn-add-cart" v-on:click.prevent="postCart({{ $item->id }})" href="#">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="button-group">
                                     <div class="fb-like" data-href="{{ Request::url() }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>

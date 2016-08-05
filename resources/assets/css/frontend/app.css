@@ -3815,8 +3815,13 @@ span.notify-right{
   padding-top: 0;
 }
 #product .pb-right-column .form-option .attributes .attribute-label{
-  width: 50px;
+  width: 100px;
   float: left;
+}
+#product .pb-right-column .form-action .attributes .attribute-label{
+  width: 70px;
+  float: left;
+  font-size: .9rem;
 }
 #product .pb-right-column .form-option .form-option-title{
   font-weight: bold;
@@ -3835,14 +3840,13 @@ span.notify-right{
   min-width: 95px;
 }
 #product .pb-right-column .form-option .qty{
-  width: 40px;
+  width: 60px;
   display: inline-block;
   float: left;
   overflow: hidden;
 
 }
 #product .pb-right-column .form-option .product-qty{
-  border: 1px solid #eaeaea;
   width: 60px;
   margin-left: 50px;
   overflow: hidden;
@@ -3866,7 +3870,7 @@ span.notify-right{
 }
 
 #product .pb-right-column .form-option .attributes input{
-  max-width: 50px;
+  max-width: 60px;
   padding: 0 5px;
 }
 #product .pb-right-column .form-option .list-color{

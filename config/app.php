@@ -154,6 +154,7 @@ return [
         Spatie\Activitylog\ActivitylogServiceProvider::class,
         Silber\Bouncer\BouncerServiceProvider::class,
         Cartalyst\Tags\TagsServiceProvider::class,
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -215,6 +216,7 @@ return [
         'Activity' => Spatie\Activitylog\ActivitylogFacade::class,
         'Datatables' => yajra\Datatables\Datatables::class,
         'Bouncer' => Silber\Bouncer\BouncerFacade::class,
+        'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
 
     ],
 

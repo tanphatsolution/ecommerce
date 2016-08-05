@@ -41,7 +41,7 @@
                 <a title="My wishlist" href="#" class="btn-heart">wishlist</a>
                 <div class="btn-cart" id="cart-block">
                     <a title="My cart" href="cart.html">Cart</a>
-                    <span class="notify notify-right">2</span>
+                    <span class="notify notify-right">{{ Cart::count() }}</span>
                     <div class="cart-block">
                         <div class="cart-block-content">
                             <p>Nothing items</p>

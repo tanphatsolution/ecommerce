@@ -15,7 +15,8 @@
         "league/glide-laravel": "^1.0",
         "silber/bouncer": "^0.1.7",
         "cartalyst/tags": "2.1.*",
-        "guzzlehttp/guzzle": "~5.3|~6.0"
+        "guzzlehttp/guzzle": "~5.3|~6.0",
+        "gloudemans/shoppingcart": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -23,6 +23,10 @@ Route::group(['middlewareGroups' => ['web']], function () {
 		});
 
 	});
+	Route::group(['prefix' => '/data', 'namespace' => 'Frontend'], function () {
+		Route::get('product/{id}', ['as' => 'data.product.show', 'uses' => 'ProductController@dataShow']);
+		Route::post('product/cart/{id}', ['as' => 'data.product.cart', 'uses' => 'ProductController@dataCart']);
+	});
 
 	Route::group(['prefix' => '/', 'namespace' => 'Frontend'], function () {
 		Route::get('/', ['as' => 'home.index', 'uses' => 'HomeController@index']);
