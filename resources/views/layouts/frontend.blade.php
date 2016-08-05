@@ -22,7 +22,9 @@
         @include('frontend._partials.social')
         {{ HTML::script('vendor/jquery/jquery.min.js') }}
         {{ HTML::script('vendor/bootstrap/js/bootstrap.min.js') }}
+        @stack('parascripts')
         {{ HTML::script(elixir('assets/js/frontend/frontend.js')) }}
+        {{ HTML::script(elixir('assets/vue/frontend/index.js')) }}
         @stack('prescripts')
     </body>
 </html>

@@ -11,8 +11,10 @@ class Product extends Abstracts\Sluggable implements TaggableInterface
     use TaggableTrait, GetImageTrait;
 
     protected $fillable = [
-    	'name','code','image','description','price','price_sale','sale','provider_id','locked','featured','user_id'
+    	'name', 'code', 'image', 'description', 'price', 'price_sale', 'sale', 'provider_id', 'locked', 'featured', 'user_id'
     ];
+
+    protected $appends = ['image_thumbnail', 'image_square'];
 
     protected $sluggable = [
         'build_from' => 'name',
