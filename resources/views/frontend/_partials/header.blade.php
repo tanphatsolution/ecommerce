@@ -2,8 +2,8 @@
 	<div class="top-header">
         <div class="container">
             <div class="nav-top-links hidden-xs">
-                <a class="first-item" href="#"><i class="fa fa-phone"></i> {{$configs['phone']}}</a>
-                <a href="#"><i class="fa fa-map-marker"></i> {{$configs['address']}}</a>
+                <a class="first-item" href="#"><i class="fa fa-phone"></i> {{ $configs['phone'] }}</a>
+                <a href="#"><i class="fa fa-map-marker"></i> {{ $configs['address'] }}</a>
             </div>
             <div class="support-link">
                 <a href="#">Services</a>
@@ -26,7 +26,7 @@
     <div class="container main-header">
         <div class="row">
             <div class="col-xs-12 col-sm-3 logo">
-                <a href="/"><img alt="{{$configs['name']}}" src="{{route('image',$configs['logo'])}}" /></a>
+                <a href="/"><img alt="{{ $configs['name'] }}" src="{{ route('image',$configs['logo']) }}" /></a>
             </div>
             <div class="col-xs-7 col-sm-7 header-search-box">
                 <form class="form-inline">

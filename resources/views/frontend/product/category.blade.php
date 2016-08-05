@@ -20,7 +20,7 @@
                 <div class="category-slider">
                     <ul class="owl-carousel owl-style2" data-dots="false" data-loop="true" data-nav = "true" data-autoplayTimeout="1000" data-autoplayHoverPause = "true" data-items="1">
                         <li>
-                            <img src="{{ route('image', $banner->image_default) }}" alt="{{$item->name}}">
+                            <img src="{{ route('image', $banner->image_default) }}" alt="{{ $item->name }}">
                         </li>
                     </ul>
                 </div>

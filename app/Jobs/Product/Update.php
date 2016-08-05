@@ -41,6 +41,9 @@ class Update extends Job
         if (isset($this->attributes['category_id'])) {
             $this->entity->categories()->sync($this->attributes['category_id']);
         }
+        if (isset($this->attributes['property_id'])) {
+            $this->entity->properties()->sync($this->attributes['property_id']);
+        }
         if (isset($this->attributes['tags'])) {
             $this->entity->setTags($this->attributes['tags']);
         }

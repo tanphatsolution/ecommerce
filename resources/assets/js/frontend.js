@@ -70,4 +70,22 @@ jQuery(document).ready(function($) {
     $(this).closest('li').children('ul').slideToggle();
     return false;
   })
-});
+
+  /* Zoom image */
+  if($('#product-zoom').length >0){
+    $('#product-zoom').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750,
+        gallery:'gallery_01'
+    }); 
+  };
+
+  $(document).on('click','.product-img-thumb a',function(){
+    var image = $(this).data('image');
+    $(this).closest('.product-image').find('.product-full img').attr('src',image);
+    return false;
+  })
+
+})

@@ -53,6 +53,7 @@ elixir(function(mix) {
     .scripts([
         'laroute.js',
         '../bower/owl.carousel/dist/owl.carousel.min.js',
+        '../bower/elevatezoom/jquery.elevatezoom.js',
         'frontend.js'
     ],'public/assets/js/frontend/frontend.js')
     .version([
