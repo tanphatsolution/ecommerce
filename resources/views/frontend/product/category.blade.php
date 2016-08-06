@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 
 @section('page-content')
-<div class="columns-container" id="category">
+<div class="columns-container">
     <div class="container" id="columns">
         <div class="breadcrumb clearfix">
             <a class="home" href="/" title="Return to Home">Home</a>
@@ -76,9 +76,8 @@
 </div>
 @endsection
 
-@push('prescripts')
+@push('parascripts')
 <script>
     var properties = {!! $properties or '[]' !!};
 </script>
-{{ HTML::script(elixir('assets/vue/frontend/category.js')) }}
 @endpush

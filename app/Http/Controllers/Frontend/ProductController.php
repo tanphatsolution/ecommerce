@@ -14,6 +14,11 @@ class ProductController extends FrontendController
         parent::__construct($product);
     }
 
+    public function dataShow($id)
+    {
+        return $this->repository->findOrFail($id);
+    }
+
     public function show($slug)
     {
         $this->compacts['item'] = $this->repository->findBySlug($slug);

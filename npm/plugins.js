@@ -76,8 +76,8 @@ var plugins = {
       out: 'backend/dropzone.js'
     },
     {
-      in: 'frontend/category.js',
-      out: 'frontend/category.js'
+      in: 'frontend/index.js',
+      out: 'frontend/index.js'
     }
   ],
   angular: [
